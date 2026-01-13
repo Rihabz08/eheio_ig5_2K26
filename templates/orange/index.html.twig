@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello OrangeController!{% endblock %}
+
+{% block body %}
+
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code>/home/sqli/eheio_ig5_2K26/src/Controller/OrangeController.php</code></li>
+        <li>Your template at <code>/home/sqli/eheio_ig5_2K26/templates/orange/index.html.twig</code></li>
+    </ul>
+</div>
+{{parent()}}
+{% endblock %}
+{% block stylesheets %}
+
+
+        {% endblock %}
+{{parent()}}
+ {% block javascripts %}
+<script>
+alert("Hello from index.html.twig")
+</script>
+           
+        {% endblock %}
+{#npm run watch = se lance une seule fois quand il y a des modifications // npm run dev = se lance à chque fois quand on change quelque chose }
